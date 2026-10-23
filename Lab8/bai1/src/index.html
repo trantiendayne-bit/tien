@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý sinh viên</title>
+</head>
+<body>
+    <h1>Quản lý danh sách sinh viên</h1>
+
+    <h2>Thêm sinh viên</h2>
+
+    <form id="studentForm">
+        <label for="studentName">Họ tên:</label>
+        <input type="text" id="studentName" required>
+
+        <label for="birthDate">Ngày sinh:</label>
+        <input type="date" id="birthDate" required>
+
+        <label for="gender">Giới tính:</label>
+        <select id="gender" required>
+            <option value="Nam">Nam</option>
+            <option value="Nữ">Nữ</option>
+        </select>
+
+        <button type="submit">Thêm sinh viên</button>
+    </form>
+
+    <h2>Danh sách sinh viên</h2>
+
+    <table border="1" cellpadding="8">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Họ tên</th>
+                <th>Ngày sinh</th>
+                <th>Giới tính</th>
+                <th>Thao tác</th>
+            </tr>
+        </thead>
+        <tbody id="studentList"></tbody>
+    </table>
+</body>
+</html>

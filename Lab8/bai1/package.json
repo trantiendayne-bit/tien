@@ -1,0 +1,15 @@
+{
+  "name": "lab8-bai1",
+  "version": "1.0.0",
+  "description": "Thuc hanh ESLint",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve --mode development --open",
+    "build": "webpack --mode production",
+    "lint": "eslint src/ --fix"
+  },
+  "devDependencies": {
+    "css-loader": "^7.1.5",
+    "style-loader": "^4.0.0"
+  }
+}
